@@ -4,28 +4,6 @@ n1 = 1;
 n2 = 20;
 
 number = 1;
-// for (let i = n1; i < n2; i++) {
-//     if (number%i != 0) {
-//         number *= i;
-//     }
-// }
-// console.log(number);
-
-
-// function primeFactors(number) {
-//     let array = [];
-//     let temp = number;
-//     while(temp > 1){
-//         for (let i = 2; i <= temp; i++) {
-//             if (temp%i == 0) {
-//                 temp /= i; 
-//                 array.push(i);
-//                 break;
-//             }
-//         }
-//     }
-//     return array;
-// }
 function primeFactors(number) {
     let array = {};
     let temp = number;
@@ -45,24 +23,19 @@ function primeFactors(number) {
     }
     return array;
 }
-let large = {}
+
+let multiples = {}
 for (let j = 1; j <= n2; j++) {
-    // console.log(primeFactors(j));
     for (x in primeFactors(j)){
-        if (large[x]) {
-            
-        } else {
-            large[x] = 0;
-        }
-        if (large[x] < primeFactors(j)[x]) {
-            large[x] = primeFactors(j)[x];
-        }
+        if (!multiples[x]) multiples[x] = 0;
+        if (multiples[x] < primeFactors(j)[x])  multiples[x] = primeFactors(j)[x];
     }
 }
 
-console.log(large);
-let largestMultiple = 1;
-for(x in large){
-    largestMultiple *= Math.pow(Number(x), large[x]);
+let smallest = 1;
+for(x in multiples){
+    smallest *= Math.pow(Number(x), multiples[x]);
 }
-console.log(largestMultiple);
+console.log(`The smallest positive number that is evenly divisible by all of the numbers from ${n1} to ${n2} is ${smallest}`);
+console.log(`The Multiples of ${smallest} are`);
+console.log(multiples);
