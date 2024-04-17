@@ -6,7 +6,7 @@ This repository contains JavaScript solutions to various Project Euler problems.
 ***Feel free to explore my code and embark on your own Project Euler adventure!***
 
 ## Progress
-Currently, I have solved **5 out of 876** problems.
+Currently, I have solved **10 out of 876** problems.
 
 ### Solved Questions
 1. [**Multiples of 3 or 5**](https://projecteuler.net/problem=1)
@@ -19,6 +19,11 @@ Currently, I have solved **5 out of 876** problems.
    - Find the largest palindrome made from the product of two 3-digit numbers. [My Attempt](./4.%20Largest%20Palindrome%20Product.js)
 5. [**Smallest Multiple**](https://projecteuler.net/problem=5)
    - What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20? [My Attempt](./5.%20Smallest%20Multiple.js)
+6. [**Sum Square Difference**](https://projecteuler.net/problem=6) [My Attempt](./6.%20Sum%20Square%20Difference.js)
+7. [**10001st Prime**](https://projecteuler.net/problem=7) [My Attempt](./7.%2010001st%20Prime.js)
+8. [**Largest Product in a Series**](https://projecteuler.net/problem=8) [My Attempt](./8.%20Largest%20Product%20in%20a%20Series.js)
+9. [**Special Pythagorean Triplet**](https://projecteuler.net/problem=9) [My Attempt](./9.%20Special%20Pythagorean%20Triplet.js)
+10. [**Summation of Primes**](https://projecteuler.net/problem=10) [My Attempt](./10.%20Summation%20of%20Primes.js)
 
 ## About Project Euler
 Project Euler is named after Leonhard Euler (1707-1783) and provides a platform for individuals to delve into challenging mathematical and programming problems. The project's aim is to stimulate the inquiring mind and provide a recreational context for learning new concepts.
